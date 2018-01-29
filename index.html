@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onload="$('#off').trigger('click')">
+   <div id=corpus>
+      <div id=interface>
+         <div id="game-name"><h1>Simon</h1></div>         
+         <div id="main-buttons">
+            <div id="counter">----</div>
+            <ul id="start-ul">
+               <li>start</li>
+               <li><button id="start"></button></li>
+            </ul>
+            <ul id="strict-ul">
+               <li>strict</li>                      
+               <li><button id="strict"></button></li>
+               <li><input type="radio" name="strict" disabled></li> 
+            </ul>
+         </div>
+         <div id="on-off">
+            <span id="off-text">off</span>
+            <button id="off"></button>
+            <button id="on"></button> 
+            <span id="on-text">on</span>
+         </div>
+      </div>
+      <button id="green"></button>
+      <button id="red"></button>
+      <button id="yellow" ></button>
+      <button id="blue"></button>
+   </div>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

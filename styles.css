@@ -1,0 +1,177 @@
+body{
+   margin: 0;
+   font-family: Courier New;
+   background: #d8c49f;
+}
+#corpus{
+   height: 500px;
+   width: 500px;
+   margin: auto;
+   padding: 15px;   
+   border-radius: 50%;
+   text-align: center;
+   background: DimGray;
+}
+#interface{
+   position: absolute;
+   top: 125px;
+   left: calc(50% - 145px);
+   height: 250px;
+   width: 250px;
+   border: 20px solid DimGray;
+   border-radius: 50%;
+   background: #535353;
+   color: MistyRose;
+}
+#green,#red,#yellow,#blue{
+   display: inline-block;
+   height: 230px;
+   width: 47%;
+   outline: none;
+   border: none;
+}
+/*INTERFACE*/
+#game-name{
+   display: inline-block;
+   margin: 15% 0 5%;
+   width: 70%;
+}
+#game-name h1{
+   margin: 2%;
+   padding: 0;
+}
+#main-buttons{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: auto;
+   width: 80%;
+}
+#counter{
+   margin-top: 10%;
+   padding: 5px 0;
+   width: 30%;
+   color: MediumVioletRed;
+   font-size: 150%;
+   border: 1px solid gray;
+   border-radius: 10px;
+   background: #1b0026;
+}
+#start-ul,#strict-ul{   
+   margin-top: 0;
+   padding: 0;
+   font-size: 110%;
+}
+#start-ul li,#strict-ul li{
+   margin: 5px 0 0 0;
+   list-style: none;
+}
+#start,#strict{   
+   height: 30px;   
+   width: 30px;
+   border: 2px solid gray;
+   border-radius: 50%;
+   background: red;
+   outline: none; 
+}
+#strict{
+   background: gold;
+}
+input[name='strict']{
+   height: 15px;
+   width: 15px;
+}
+input[name='strict']:before {
+   content:'';
+   display:block;
+   width:51%;
+   height:52%;
+   margin: 0;    
+   border: 3px solid #1b0026;
+   border-radius:50%;    
+   background: #1b0026;
+}
+input[name='strict']:checked:before {
+   background: MediumVioletRed;
+}
+/*COLOR-BUTTONS*/
+#green{
+   margin: 10px 0 0 0;
+   border-radius: 100% 0 0 0;
+   background: LimeGreen;
+}
+#red{
+   margin: 0 0 0 2%;
+   border-radius: 0 100% 0 0;
+   background: #e40101;
+}
+#yellow{
+   margin: 20px 0 0 0;
+   border-radius: 0 0 0 100%;
+   background: #fcd500;
+}
+#blue{
+   margin: 20px 0 0 2%;
+   border-radius: 0 0 100% 0;
+   background: blue;
+}
+/*ON-OFF*/
+#on-off{
+   display: flex; 
+   justify-content: center;
+   margin: 1% auto 0;
+   height: 25px;
+   width: 50%;
+}
+#on-off #off-text,#on-off #on-text{ 
+   padding: 0 5px;
+   height: 25px;
+   min-width: 25px;
+   font-size: 125%;
+}
+#on-off button{
+   height: 25px;
+   width: 25px;      
+   border: none;
+   outline: none;
+}
+#on{
+   background: #1f1f1f;
+}
+@media all and (max-width: 1000px) {
+   #corpus{
+      height: 400px;
+      width: 400px;
+      padding: 10px; 
+   }
+   #interface{
+      top: 90px;
+      left: calc(50% - 120px);
+      height: 200px;
+      width: 200px;
+   }
+   #green,#red,#yellow,#blue{
+      height: 180px;
+      width: 47%;
+   }
+   #counter{
+      font-size: 100%;
+   }
+   #start-ul,#strict-ul{
+      font-size: 90%;
+   }
+   #start,#strict{      
+      height: 25px;
+      width: 25px;
+   }
+   #on-off #off-text,#on-off #on-text{
+      margin: 0 5px;
+      font-size: 100%;
+   }
+   #on-off button{
+      height: 15px;
+      width: 25px;      
+      border: none;
+      outline: none;
+   }
+}
